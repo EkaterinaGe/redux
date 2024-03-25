@@ -1,17 +1,12 @@
-import './App.css';
 import React from 'react';
-import ProductCard from './product/card/product-card.component';
-import productListData from '../data/product.data';
+import ProductListContainer from './product/list/product-list.container';
 
-const App = () => {
-    return (
-        <div className="app">
-            <h1>Product List</h1>
-            {productListData.map((product) => (
-                <ProductCard key={product.id} {...product} />
-            ))}
-        </div>
-    );
+const App: React.FC = () => {
+  return (
+    <div className="App">
+      <ProductListContainer />
+    </div>
+  );
 };
 
 export default App;

@@ -1,5 +1,5 @@
 import React, { memo, FC } from 'react';
-import ProductModel from '../../../data/product.model';
+import ProductModel from '../../../models/product.model';
 import "./product-card.css";
 
 type ProductCardProps = ProductModel;
