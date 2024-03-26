@@ -1,11 +1,18 @@
+
+.product-list ul {
+    margin: 0;
+    padding: 0;
+}
+
 .product-card {
-    border: 1px solid rgb(149, 168, 255);
+    width: 1000px;
+    border: 1px solid rgb(210, 218, 255);
     border-radius: 20px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
-    background: rgb(210, 218, 255);
+    background: rgb(227, 233, 255);
 }
 
 .image {
@@ -36,11 +43,6 @@
 }
 
 .product__description p {
-    height: 110px;
     width: 600px;
     margin: 0;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
 }

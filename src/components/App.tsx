@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductListContainer from './product/list/product-list.container';
+import ProductListContainer from './product/product-list.container';
 
 const App: React.FC = () => {
   return (

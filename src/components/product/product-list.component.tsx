@@ -1,6 +1,7 @@
 import { FC } from 'react';
-import ProductModel from '../../../models/product.model';
+import ProductModel from '../../models/product.model';
 import './product-list.component.css';
+import Description from '../description/description';
 
 interface ProductListProps {
   products: ProductModel[];
@@ -19,7 +20,7 @@ const ProductList: FC<ProductListProps> = ({ products }) => {
             <div className="product__about">
                 <div className="product__description">
                     <h3>{product.title}</h3>
-                    <p>{product.description}</p>
+                    <Description text={product.description} />
                 </div>
                 <p className="price">Price: ${product.price}</p>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductList from './product-list.component';
-import { useProducts } from '../../../products.hook';
+import { useProducts } from '../../services/product-api.service';
 
 const ProductListContainer: React.FC = () => {
   const { products, loading, error } = useProducts();
