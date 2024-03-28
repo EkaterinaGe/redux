@@ -1,0 +1,20 @@
+.div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.create {
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.create:hover {
+    background-color: #0056b3;
+}

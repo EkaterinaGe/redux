@@ -12,7 +12,7 @@ export const productSlice = createSlice({
   initialState,
   reducers: {
     setProducts: (state, action: PayloadAction<ProductModel[]>) => {
-      state.products = action.payload;
+      state.products = action.payload.concat(state.products);
     },
   },
 });

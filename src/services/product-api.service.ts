@@ -1,4 +1,4 @@
-import axios, {AxiosResponse} from 'axios';
+import axios from 'axios';
 import { PRODUCTS_URL } from '../constants/constants';
 import ProductModel from '../models/product.model';
 import { useDispatch } from 'react-redux';
@@ -34,6 +34,11 @@ export const useProducts = () => {
     return { products, loading, error };
 };
 
-export async function fetchProductsApi(): Promise<AxiosResponse<ProductModel[]>> {
-    return axios.get(PRODUCTS_URL);
+export async function createProductApi(product: Partial<ProductModel>): Promise<ProductModel> {
+    try {
+      const response = await axios.post<ProductModel>(PRODUCTS_URL, product);
+      return response.data;
+    } catch (error) {
+      throw new Error('Error creating product');
+    }
 }
